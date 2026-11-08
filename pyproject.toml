@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "http-contract-diff"
+version = "1.0.0"
+description = "Comparação offline e direcional de contratos HTTP JSON explícitos."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Contribuidores LOFRANO TECNOLOGIA"}]
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent"]
+
+[project.scripts]
+http-contract-diff = "http_contract_diff.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/martinlofranodeoliveira/http-contract-diff"
+Issues = "https://github.com/martinlofranodeoliveira/http-contract-diff/issues"
+
+[tool.setuptools.packages.find]
+include = ["http_contract_diff*"]

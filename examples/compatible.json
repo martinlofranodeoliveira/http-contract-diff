@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/catalog",
+      "request": {"fields": {"category": {"type": "string", "required": false, "enum": ["books", "tools", "home"]}, "limit": {"type": "integer", "required": false}}},
+      "responses": {"200": {"fields": {"id": {"type": "string", "required": true}, "state": {"type": "string", "required": true, "enum": ["active"]}, "label": {"type": "string", "required": false}}}}
+    }
+  ]
+}
